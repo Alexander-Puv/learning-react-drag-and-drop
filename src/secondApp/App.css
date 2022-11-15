@@ -13,17 +13,30 @@
     background: #202124;
     color: #bdc1c6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
 }
 
-.area {
-    height: 80vh;
-    width: 80vw;
+.board {
+    min-width: 300px;
+    min-height: 400px;
+    margin: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.dropArea {
-    border: 5px dashed #bdc1c6;
+.board__title {
+    font-style: 1.5rem;
+    font-weight: 700;
+}
+
+.item {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 2px solid #bdc1c6;
+    border-radius: 5px;
+    cursor: grab;
 }
